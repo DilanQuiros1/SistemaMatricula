@@ -1,0 +1,62 @@
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\bin\Debug\Examen.exe.config
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\bin\Debug\Examen.exe
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\bin\Debug\Examen.pdb
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.csproj.SuggestedBindingRedirects.cache
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Ventanas\Docentes.g.cs
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Ventanas\Estudiantes.g.cs
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\App.g.cs
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen_MarkupCompile.lref
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Ventanas\Docentes.baml
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Ventanas\Estudiantes.baml
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.g.resources
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.csproj.CopyComplete
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.exe
+C:\Users\Windows  10\Desktop\TUTORIAS\ROY\Examen\Examen\obj\Debug\Examen.pdb
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\bin\Debug\Examen.exe.config
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\bin\Debug\Examen.exe
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\bin\Debug\Examen.pdb
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.csproj.SuggestedBindingRedirects.cache
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Ventanas\Docentes.g.cs
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Ventanas\Estudiantes.g.cs
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\App.g.cs
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen_MarkupCompile.lref
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Ventanas\Docentes.baml
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Ventanas\Estudiantes.baml
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.g.resources
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.csproj.CopyComplete
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.exe
+C:\Users\Windows  10\Desktop\ULATINA\2024-IC-Sistemas Operativos\Semana 12\Examen\obj\Debug\Examen.pdb
+C:\Users\Dilan Quiros\source\repos\Examen\bin\Debug\Examen.exe.config
+C:\Users\Dilan Quiros\source\repos\Examen\bin\Debug\Examen.exe
+C:\Users\Dilan Quiros\source\repos\Examen\bin\Debug\Examen.pdb
+C:\Users\Dilan Quiros\source\repos\Examen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dilan Quiros\source\repos\Examen\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Ventanas\Docentes.g.cs
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Ventanas\Estudiantes.g.cs
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\App.g.cs
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen_MarkupCompile.lref
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Ventanas\Docentes.baml
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Ventanas\Estudiantes.baml
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.g.resources
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.csproj.Up2Date
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.exe
+C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.pdb
