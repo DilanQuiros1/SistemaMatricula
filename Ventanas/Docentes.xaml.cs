@@ -97,7 +97,7 @@ namespace Examen
             {
                 MessageBox.Show(ex.ToString());
             }
-           
+           // MessageBox.Show(cbNivel.Text);
 
         }
 
@@ -105,44 +105,48 @@ namespace Examen
         {
             try
             {
-                /*string filePath = @"C:\Examen\Docentes.json";
-
-           // Leer el contenido del archivo JSON
-           string jsonContent = File.ReadAllText(filePath);
-
-           // Parsear el JSON a una lista de objetos dinámicos
-           JArray jsonArray = JArray.Parse(jsonContent);
-
-           // Buscar el usuario que deseas editar (en este caso, el primero)
-           JObject usuario = jsonArray[0] as JObject;
-
-           // Realizar los cambios necesarios
-           usuario["Nombre"] = "NuevoNombre";
-
-           // Convertir la lista de objetos dinámicos de vuelta a una cadena JSON
-           string updatedJson = JsonConvert.SerializeObject(jsonArray, Formatting.Indented);
-
-           // Escribir la cadena JSON actualizada de vuelta al archivo
-           File.WriteAllText(filePath, updatedJson);*/
-                List<clsDocente> listaEditar = LoadDocentesFromJson(@"C:\Examen\Docentes.json");
-
-                EditDocente(listaEditar, 1, new clsDocente
+              
+                if(txtID.Text!=null)
                 {
-                    IdDocente = Convert.ToInt32(txtID.Text),
-                    Nombre = txtNom.Text,
-                    Apellidos = txtApes.Text,
-                    Identificacion = txtID.Text,
-                    Celular = txtCel.Text,
-                    Correo = txtCorreo.Text,
-                    Asignatura = txtAsignatura.Text,
-                    Nivel = cbNivel.Text,
-                    FechaInicioMEP = dpFNac.Text,
-                    EstadoCivil = txtAsignatura.Text,
-                    Genero = cbGenero.Text,
-                });
+                    /*string filePath = @"C:\Examen\Docentes.json";
 
-                SaveDocentesToJson(listaEditar, @"C:\Examen\Docentes.json");
-                MessageBox.Show("Se edito al JSON");
+          // Leer el contenido del archivo JSON
+          string jsonContent = File.ReadAllText(filePath);
+
+          // Parsear el JSON a una lista de objetos dinámicos
+          JArray jsonArray = JArray.Parse(jsonContent);
+
+          // Buscar el usuario que deseas editar (en este caso, el primero)
+          JObject usuario = jsonArray[0] as JObject;
+
+          // Realizar los cambios necesarios
+          usuario["Nombre"] = "NuevoNombre";
+
+          // Convertir la lista de objetos dinámicos de vuelta a una cadena JSON
+          string updatedJson = JsonConvert.SerializeObject(jsonArray, Formatting.Indented);
+
+          // Escribir la cadena JSON actualizada de vuelta al archivo
+          File.WriteAllText(filePath, updatedJson);*/
+                    int id = Convert.ToInt32(txtID.Text);
+                    List<clsDocente> listaEditar = LoadDocentesFromJson(@"C:\Examen\Docentes.json");
+
+                    EditDocente(listaEditar, id, new clsDocente
+                    {
+                        Nombre = txtNom.Text,
+                        Apellidos = txtApes.Text,
+                        Identificacion = txtID.Text,
+                        Celular = txtCel.Text,
+                        Correo = txtCorreo.Text,
+                        Asignatura = txtAsignatura.Text,
+                        Nivel = cbNivel.Text,
+                        FechaInicioMEP = dpFNac.Text,
+                        EstadoCivil = txtAsignatura.Text,
+                        Genero = cbGenero.Text,
+                    });
+
+                    SaveDocentesToJson(listaEditar, @"C:\Examen\Docentes.json");
+                    MessageBox.Show("Se edito al JSON: ");
+                }
             }
             catch(Exception)
             {
@@ -165,8 +169,8 @@ namespace Examen
         static void SaveDocentesToJson(List<clsDocente> listaDocentes, string filePath)
         {
             // Serializar la lista de docentes de vuelta a JSON
-            string json = JsonConvert.SerializeObject(listaDocentes, Formatting.Indented);
-
+            //string json = JsonConvert.SerializeObject(listaDocentes, Formatting.Indented);
+            string json = JsonConvert.SerializeObject(listaDocentes.ToArray());
             // Escribir el JSON actualizado de vuelta al archivo
             File.WriteAllText(filePath, json);
         }
@@ -175,7 +179,7 @@ namespace Examen
         {
             // Buscar el docente con el ID especificado
             clsDocente docente = listaDocentes.Find(d => d.IdDocente == idDocente);
-
+           
             if (docente != null)
             {
                 // Aplicar los nuevos datos al docente encontrado
@@ -189,25 +193,25 @@ namespace Examen
                     docente.EstadoCivil = nuevosDatos.EstadoCivil;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Correo))
-                    docente.Nombre = nuevosDatos.Correo;
+                    docente.Correo = nuevosDatos.Correo;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Identificacion))
-                    docente.Apellidos = nuevosDatos.Identificacion;
+                    docente.Identificacion = nuevosDatos.Identificacion;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Celular))
-                    docente.EstadoCivil = nuevosDatos.Celular;
+                    docente.Celular = nuevosDatos.Celular;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Asignatura))
-                    docente.Nombre = nuevosDatos.Asignatura;
+                    docente.Asignatura = nuevosDatos.Asignatura;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Nivel))
-                    docente.Apellidos = nuevosDatos.Nivel;
+                    docente.Nivel = nuevosDatos.Nivel;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.FechaInicioMEP))
-                    docente.EstadoCivil = nuevosDatos.FechaInicioMEP;  
+                    docente.FechaInicioMEP = nuevosDatos.FechaInicioMEP;  
                 
                 if (!string.IsNullOrEmpty(nuevosDatos.Genero))
-                    docente.EstadoCivil = nuevosDatos.Genero;
+                    docente.Genero = nuevosDatos.Genero;
 
 
                 // Puedes agregar más campos según sea necesario
