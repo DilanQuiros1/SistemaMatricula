@@ -26,6 +26,7 @@ namespace Examen
     {
         #region Declaraciones
         List<clsDocente> listaDocentes = new List<clsDocente>();//Lista de docentes
+        clsDocente docenteGrilla = new clsDocente();
         #endregion
 
         public Docentes()
@@ -82,7 +83,7 @@ namespace Examen
                     Asignatura = txtAsignatura.Text,
                     Nivel = cbNivel.Text,
                     FechaInicioMEP = dpFNac.Text,
-                    EstadoCivil = txtAsignatura.Text,
+                    EstadoCivil = cbEstadoCivil.Text,
                     Genero = cbGenero.Text,
                 });
 
@@ -146,6 +147,8 @@ namespace Examen
 
                     SaveDocentesToJson(listaEditar, @"C:\Examen\Docentes.json");
                     MessageBox.Show("Se edito al JSON: ");
+                    importarDocentes();
+
                 }
                 else
                 {
@@ -158,6 +161,7 @@ namespace Examen
             }
 
         }
+
 
         static List<clsDocente> LoadDocentesFromJson(string filePath)
         {
@@ -240,7 +244,8 @@ namespace Examen
             {
                 docentes.Remove(docenteAEliminar);
                 GuardarDocentesEnArchivo(docentes, @"C:\Examen\Docentes.json");
-                Console.WriteLine("Docente eliminado exitosamente.");
+                MessageBox.Show("Se elimino de forma correcta");
+                importarDocentes();
             }
             else
             {
@@ -271,6 +276,61 @@ namespace Examen
         private void btnEliminar_Click(object sender, RoutedEventArgs e)
         {
             EliminarDocentePorId(Convert.ToInt32(txtID.Text));
+        }
+
+        private void dgDocentes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            docenteGrilla = ((System.Windows.Controls.DataGrid)sender).SelectedItem as clsDocente;
+
+            txtID.Text = docenteGrilla?.Identificacion;
+            txtNom.Text = docenteGrilla?.Nombre;
+            txtApes.Text = docenteGrilla?.Apellidos;
+            txtCorreo.Text = docenteGrilla?.Correo;
+            txtCel.Text = docenteGrilla?.Celular;
+            txtAsignatura.Text = docenteGrilla?.Asignatura;
+
+            if (docenteGrilla?.Genero != null)
+            {
+                if ((bool)(docenteGrilla?.Genero.Equals("Femenino")))
+                {
+                    cbGenero.SelectedItem = cbGenero.Items.GetItemAt(0);
+                }
+                else
+                {
+                    cbGenero.SelectedItem = cbGenero.Items.GetItemAt(1);
+
+                }
+            }
+
+            if (docenteGrilla?.Nivel != null)
+            {
+                if ((bool)(docenteGrilla?.Nivel.Equals("Setimo")))
+                {
+                    cbNivel.SelectedItem = cbNivel.Items.GetItemAt(0);
+                }
+                else if ((bool)(docenteGrilla?.Nivel.Equals("Octavo")))
+                {
+                    cbNivel.SelectedItem = cbNivel.Items.GetItemAt(1);
+
+                }
+                else if ((bool)(docenteGrilla?.Nivel.Equals("Noveno")))
+                {
+                    cbNivel.SelectedItem = cbNivel.Items.GetItemAt(2);
+
+                }
+                else if ((bool)(docenteGrilla?.Nivel.Equals("Decimo")))
+                {
+                    cbNivel.SelectedItem = cbNivel.Items.GetItemAt(3);
+
+                }
+                else
+                {
+                    cbNivel.SelectedItem = cbNivel.Items.GetItemAt(4);
+
+                }
+            }
+
         }
     }
 }

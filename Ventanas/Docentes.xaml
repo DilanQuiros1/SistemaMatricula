@@ -11,7 +11,7 @@
         <Label x:Name="lblBuscar" Content="Nombre docente:" HorizontalAlignment="Left" Height="30" Margin="20,70,0,0" VerticalAlignment="Top" Width="112"/>
         <TextBox x:Name="txtBuscar" HorizontalAlignment="Left" Height="30" Margin="146,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
         <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="30" Margin="410,70,0,0" VerticalAlignment="Top" Width="100"/>
-        <DataGrid x:Name="dgDocentes" HorizontalAlignment="Left" Height="292" Margin="26,0,0,0" VerticalAlignment="Center" Width="568" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <DataGrid x:Name="dgDocentes" HorizontalAlignment="Left" Height="292" Margin="26,0,0,0" VerticalAlignment="Center" Width="568" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="dgDocentes_SelectionChanged"/>
         <Button x:Name="btnImportar" Content="Importar" HorizontalAlignment="Left" Height="30" Margin="29,435,0,0" VerticalAlignment="Top" Width="100" Click="btnImportar_Click"/>
         <Button x:Name="btnExportar" Content="Exportar" HorizontalAlignment="Left" Height="30" Margin="220,435,0,0" VerticalAlignment="Top" Width="100"/>
         <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Height="30" Margin="410,435,0,0" VerticalAlignment="Top" Width="100"/>
@@ -36,9 +36,11 @@
             <ComboBoxItem>Masculino</ComboBoxItem>
         </ComboBox>
         <ComboBox x:Name="cbNivel" HorizontalAlignment="Left" Height="30" Margin="707,315,0,0" VerticalAlignment="Top" Width="114">
-            <ComboBoxItem>Nivel 1</ComboBoxItem>
-            <ComboBoxItem IsSelected="True">Nivel 2</ComboBoxItem>
-            <ComboBoxItem>Nivel 3</ComboBoxItem>
+            <ComboBoxItem>Septimo</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">Octavo</ComboBoxItem>
+            <ComboBoxItem>Noveno</ComboBoxItem> 
+            <ComboBoxItem IsSelected="True">Decimo</ComboBoxItem>
+            <ComboBoxItem>Undecimo</ComboBoxItem>
         </ComboBox>
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Height="30" Margin="631,374,0,0" VerticalAlignment="Top" Width="100" Click="btnGuardar_Click"/>
         <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="30" Margin="781,374,0,0" VerticalAlignment="Top" Width="100"/>
