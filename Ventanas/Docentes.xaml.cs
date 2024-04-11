@@ -147,10 +147,14 @@ namespace Examen
                     SaveDocentesToJson(listaEditar, @"C:\Examen\Docentes.json");
                     MessageBox.Show("Se edito al JSON: ");
                 }
+                else
+                {
+                    MessageBox.Show("Ingresa la dentificacion del usuario");
+                }
             }
             catch(Exception)
             {
-
+                MessageBox.Show("Error a realizar la operacion");
             }
 
         }
@@ -168,11 +172,15 @@ namespace Examen
 
         static void SaveDocentesToJson(List<clsDocente> listaDocentes, string filePath)
         {
-            // Serializar la lista de docentes de vuelta a JSON
-            //string json = JsonConvert.SerializeObject(listaDocentes, Formatting.Indented);
-            string json = JsonConvert.SerializeObject(listaDocentes.ToArray());
-            // Escribir el JSON actualizado de vuelta al archivo
-            File.WriteAllText(filePath, json);
+            if (File.Exists(filePath))
+            {
+                // Serializar la lista de docentes de vuelta a JSON
+                //string json = JsonConvert.SerializeObject(listaDocentes, Formatting.Indented);
+                string json = JsonConvert.SerializeObject(listaDocentes.ToArray());
+                // Escribir el JSON actualizado de vuelta al archivo
+                File.WriteAllText(filePath, json);
+            }
+           
         }
 
         static void EditDocente(List<clsDocente> listaDocentes, int idDocente, clsDocente nuevosDatos)
@@ -222,5 +230,47 @@ namespace Examen
             }
         }
 
+        public void EliminarDocentePorId(int idDocente)
+        {
+            List<clsDocente> docentes = LeerDocentesDesdeArchivo(@"C:\Examen\Docentes.json");
+
+            // Buscar y eliminar el docente con el IdDocente dado
+            clsDocente docenteAEliminar = docentes.Find(d => d.IdDocente == idDocente);
+            if (docenteAEliminar != null)
+            {
+                docentes.Remove(docenteAEliminar);
+                GuardarDocentesEnArchivo(docentes, @"C:\Examen\Docentes.json");
+                Console.WriteLine("Docente eliminado exitosamente.");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró ningún docente con el Id proporcionado.");
+            }
+        }
+
+        private List<clsDocente> LeerDocentesDesdeArchivo(string filePath)
+        {
+            List<clsDocente> docentes;
+            using (StreamReader file = File.OpenText(filePath))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                docentes = (List<clsDocente>)serializer.Deserialize(file, typeof(List<clsDocente>));
+            }
+            return docentes;
+        }
+
+        private void GuardarDocentesEnArchivo(List<clsDocente> docentes, string filePath)
+        {
+            using (StreamWriter file = File.CreateText(filePath))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, docentes);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        {
+            EliminarDocentePorId(Convert.ToInt32(txtID.Text));
+        }
     }
 }

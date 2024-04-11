@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\dilan quiros\\source\\repos\\examen\\ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\dilan quiros\\source\\repos\\examen\\ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Estudiantes.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Estudiantes.xaml.cs",
               "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml.cs",
               "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Estudiantes.xaml.cs",
               "RelativeToolTip": "Ventanas\\Estudiantes.xaml.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAIAwwMYAAAAaAAAA",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAuwAEBAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T13:28:05.584Z",
               "EditorCaption": ""
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "Ventanas\\Docentes.xaml.cs",
               "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Docentes.xaml.cs",
               "RelativeToolTip": "Ventanas\\Docentes.xaml.cs",
-              "ViewState": "AQIAAGIAAAAAAAAAAAAwwIEAAAA5AAAA",
+              "ViewState": "AQIAAOoAAAAAAAAAAAAgwA8BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T13:24:37.364Z",
               "EditorCaption": ""
@@ -84,15 +84,15 @@
               "Title": "Docentes.xaml",
               "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Docentes.xaml",
               "RelativeDocumentMoniker": "Ventanas\\Docentes.xaml",
-              "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Docentes.xaml",
-              "RelativeToolTip": "Ventanas\\Docentes.xaml",
+              "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Docentes.xaml*",
+              "RelativeToolTip": "Ventanas\\Docentes.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-10T13:24:32.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Estudiantes.xaml",
               "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Estudiantes.xaml",
               "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml",

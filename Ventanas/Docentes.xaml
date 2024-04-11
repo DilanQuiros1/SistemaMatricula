@@ -42,7 +42,7 @@
         </ComboBox>
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Height="30" Margin="631,374,0,0" VerticalAlignment="Top" Width="100" Click="btnGuardar_Click"/>
         <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="30" Margin="781,374,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="30" Margin="940,374,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="30" Margin="940,374,0,0" VerticalAlignment="Top" Width="100" Click="btnEliminar_Click"/>
         <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Height="30" Margin="940,424,0,0" VerticalAlignment="Top" Width="100" Click="btnEditar_Click"/>
         <Label x:Name="lblBuscar_Copy10" Content="Nuevo Docente:" HorizontalAlignment="Left" Height="30" Margin="617,63,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold"/>
         <Label x:Name="lblBuscar_Copy9" Content="Estado civil:" HorizontalAlignment="Left" Height="30" Margin="834,312,0,0" VerticalAlignment="Top" Width="85"/>
