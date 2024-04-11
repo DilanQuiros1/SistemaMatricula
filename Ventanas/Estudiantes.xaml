@@ -46,6 +46,7 @@
         <Button x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Height="30" Margin="555,384,0,0" VerticalAlignment="Top" Width="100" Click="btnGuardar_Click"/>
         <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="30" Margin="705,384,0,0" VerticalAlignment="Top" Width="100" Click="btnLimpiar_Click"/>
         <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="30" Margin="864,384,0,0" VerticalAlignment="Top" Width="100" Click="btnEliminar_Click"/>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Height="30" Margin="864,434,0,0" VerticalAlignment="Top" Width="100" Click="btnEditar_Click"/>
         <Button x:Name="btnMasNiv" Content="Docentes" HorizontalAlignment="Left" Height="30" Margin="864,327,0,0" VerticalAlignment="Top" Width="100" Click="btnMasNiv_Click"/>
         <Label x:Name="lblBuscar_Copy10" Content="Nuevo estudiante:" HorizontalAlignment="Left" Height="30" Margin="541,73,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold"/>
 

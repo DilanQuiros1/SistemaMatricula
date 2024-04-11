@@ -91,7 +91,8 @@ namespace Examen
 
                 //File.WriteAllText(@"C:\Examen\Docentes.json", json);
                 SaveDocentesToJson(listaDocentes, @"C:\Examen\Docentes.json");
-                MessageBox.Show("Se agrego al JSON");
+                MessageBox.Show("Se guardo de forma exitosa");
+                importarDocentes();
 
             }
             catch (Exception ex)
@@ -146,7 +147,7 @@ namespace Examen
                     });
 
                     SaveDocentesToJson(listaEditar, @"C:\Examen\Docentes.json");
-                    MessageBox.Show("Se edito al JSON: ");
+                    MessageBox.Show("Se edito el usuario, ID: "+id.ToString());
                     importarDocentes();
 
                 }
@@ -249,7 +250,7 @@ namespace Examen
             }
             else
             {
-                Console.WriteLine("No se encontró ningún docente con el Id proporcionado.");
+                MessageBox.Show("No existe ese ID");
             }
         }
 

@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\obj\\Debug\\Ventanas\\Docentes.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\Ventanas\\Docentes.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\dilan quiros\\source\\repos\\examen\\ventanas\\docentes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\docentes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\dilan quiros\\source\\repos\\examen\\ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\obj\\Debug\\Ventanas\\Estudiantes.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\Ventanas\\Estudiantes.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,26 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Estudiantes.g.cs",
-              "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\obj\\Debug\\Ventanas\\Estudiantes.g.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\Ventanas\\Estudiantes.g.cs",
-              "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\obj\\Debug\\Ventanas\\Estudiantes.g.cs",
-              "RelativeToolTip": "obj\\Debug\\Ventanas\\Estudiantes.g.cs",
-              "ViewState": "AQIAAD4BAAAAAAAAAAAUwFYBAABxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T16:21:45.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Estudiantes.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Estudiantes.xaml.cs",
               "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml.cs",
               "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Estudiantes.xaml.cs",
               "RelativeToolTip": "Ventanas\\Estudiantes.xaml.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAIA2wGUAAAAIAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAMwIAAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-10T13:28:05.584Z",
               "EditorCaption": ""
@@ -100,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Estudiantes.xaml",
               "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Estudiantes.xaml",
               "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml",
@@ -119,53 +94,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "84d0c190-42c0-472c-9099-17135bfdfb18",
-        "Display": 0,
-        "X": -339,
-        "Y": -21,
-        "Width": 1468,
-        "Height": 821,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Docentes.g.cs",
-              "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\obj\\Debug\\Ventanas\\Docentes.g.cs",
-              "RelativeDocumentMoniker": "obj\\Debug\\Ventanas\\Docentes.g.cs",
-              "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\obj\\Debug\\Ventanas\\Docentes.g.cs",
-              "RelativeToolTip": "obj\\Debug\\Ventanas\\Docentes.g.cs",
-              "ViewState": "AQIAAE0BAAAAAAAAAAAkwGMBAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T16:21:29.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Docentes.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Docentes.xaml.cs",
-              "RelativeDocumentMoniker": "Ventanas\\Docentes.xaml.cs",
-              "ToolTip": "C:\\Users\\Dilan Quiros\\source\\repos\\Examen\\Ventanas\\Docentes.xaml.cs",
-              "RelativeToolTip": "Ventanas\\Docentes.xaml.cs",
-              "ViewState": "AQIAABABAAAAAAAAAAAewB8BAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T13:24:37.364Z",
-              "EditorCaption": ""
             }
           ]
         }

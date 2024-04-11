@@ -28,6 +28,7 @@ namespace Examen
         List<clsEstudiante> listaEstudiante = new List<clsEstudiante>();//Lista de estudiantes
         List<clsEstudiante> listalistaEstudianteTemp = new List<clsEstudiante>();//Lista de estudiantes temporal
         clsEstudiante estudianteGrilla = new clsEstudiante();//Instancia de un usuario
+        string path = @"C:\Examen\Estudiantes.json";
         string accion = "Nuevo";//Variable tipo bandera que almacena la acción que se esta realizando.
         int cont = 1;//Variable que define el ID del estudiante
         public static escribirLog bitacora;
@@ -103,12 +104,13 @@ namespace Examen
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            GuardarCambios();
+            //GuardarCambios();
+            RegistrarEstudiante();
         }
 
         public void importarEstudiantes()
         {
-            string path = @"C:\Examen\Estudiantes.json";
+           
 
             //se abre el archivo Json que se va leer
             using (StreamReader sr = File.OpenText(path))
@@ -176,7 +178,7 @@ namespace Examen
             clsEstudiante estudiante = new clsEstudiante();
             if (txtID.Text.Length > 0)
             {
-                estudiante.IdEstudiante = cont;
+                estudiante.IdEstudiante = Convert.ToInt32(txtID.Text);
                 estudiante.Identificacion = txtID.Text;
                 estudiante.Nombre = txtNom.Text;
                 estudiante.Apellidos = txtApes.Text;
@@ -195,7 +197,11 @@ namespace Examen
                 estudiante.Direccion = txtDir.Text;
                 estudiante.Nivel = cbNivel.Text.ToString();
                 listaEstudiante.Add(estudiante);
-                System.Windows.MessageBox.Show("Estudiante agregado exitosamente.");
+
+                SaveUsuarioToJson(listaEstudiante, path);
+
+                MessageBox.Show("Estudiante agregado exitosamente.");
+                importarEstudiantes();
                 Limpiar();
                 cont++;
             }
@@ -206,6 +212,20 @@ namespace Examen
                 bitacora = new escribirLog(err, false);
             }
         }
+
+        static void SaveUsuarioToJson(List<clsEstudiante> listaDocentes, string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                // Serializar la lista de vuelta a JSON
+                //string json = JsonConvert.SerializeObject(listaDocentes, Formatting.Indented);
+                string json = JsonConvert.SerializeObject(listaDocentes.ToArray());
+                // Escribir el JSON actualizado de vuelta al archivo
+                File.WriteAllText(filePath, json);
+            }
+
+        }
+
 
         public void EditarEstudiante()
         {
@@ -236,7 +256,7 @@ namespace Examen
                     }
                 }
 
-                System.Windows.MessageBox.Show("Estudiante modificado exitosamente.");
+                MessageBox.Show("Estudiante modificado exitosamente.");
             }
         }
 
@@ -267,7 +287,7 @@ namespace Examen
 
         public void EscribirArchivo(string pDatos)
         {
-            string path = @"C:\Examen\Estudiantes.json";
+            //string path = @"C:\Examen\Estudiantes.json";
 
             if (File.Exists(path))
             {
@@ -284,8 +304,48 @@ namespace Examen
         {
             if (listaEstudiante != null && listaEstudiante.Count > 0)
             {
-                listaEstudiante.RemoveAll(u => u.IdEstudiante == estudianteGrilla.IdEstudiante);
+                //listaEstudiante.RemoveAll(u => u.IdEstudiante == estudianteGrilla.IdEstudiante);
+                EliminarUsuarioPorId(Convert.ToInt32(txtID.Text));
             }
+        }
+
+        public void EliminarUsuarioPorId(int idUsuario)
+        {
+            List<clsEstudiante> docentes = LeerUsuariosDesdeArchivo(path);
+
+            // Buscar y eliminar el docente con el IdDocente dado
+            clsEstudiante docenteAEliminar = docentes.Find(d => d.IdEstudiante == idUsuario);
+            if (docenteAEliminar != null)
+            {
+                docentes.Remove(docenteAEliminar);
+                GuardarUsuariosEnArchivo(docentes, path);
+                MessageBox.Show("Se elimino de forma correcta");
+                importarEstudiantes();
+            }
+            else
+            {
+                MessageBox.Show("No existe ese ID");
+            }
+        }
+
+        private void GuardarUsuariosEnArchivo(List<clsEstudiante> docentes, string filePath)
+        {
+            using (StreamWriter file = File.CreateText(filePath))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                serializer.Serialize(file, docentes);
+            }
+        }
+
+        private List<clsEstudiante> LeerUsuariosDesdeArchivo(string filePath)
+        {
+            List<clsEstudiante> docentes;
+            using (StreamReader file = File.OpenText(filePath))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                docentes = (List<clsEstudiante>)serializer.Deserialize(file, typeof(List<clsEstudiante>));
+            }
+            return docentes;
         }
 
         private void btnLimpiar_Click(object sender, RoutedEventArgs e)
@@ -297,13 +357,11 @@ namespace Examen
         {
             if (estudianteGrilla != null && estudianteGrilla.IdEstudiante != 0)
             {
-                var respuesta = System.Windows.MessageBox.Show("Deseas eliminar este estudiante?", "Atención", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                var respuesta = MessageBox.Show("Deseas eliminar este estudiante?", "Atención", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 {
                     if (respuesta == MessageBoxResult.Yes)
                     {
-                        EliminarUsuario();
-                        ListaEstudiantes(null);
-                        System.Windows.MessageBox.Show("Estudiante eliminado de manera correcta.");
+                        EliminarUsuarioPorId(Convert.ToInt32(txtID.Text));
                     }
                     else
                     {
@@ -326,5 +384,122 @@ namespace Examen
         {
             ExportarEstudiantes();
         }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+
+                if (txtID.Text != null)
+                {
+                    /*string filePath = @"C:\Examen\Docentes.json";
+
+          // Leer el contenido del archivo JSON
+          string jsonContent = File.ReadAllText(filePath);
+
+          // Parsear el JSON a una lista de objetos dinámicos
+          JArray jsonArray = JArray.Parse(jsonContent);
+
+          // Buscar el usuario que deseas editar (en este caso, el primero)
+          JObject usuario = jsonArray[0] as JObject;
+
+          // Realizar los cambios necesarios
+          usuario["Nombre"] = "NuevoNombre";
+
+          // Convertir la lista de objetos dinámicos de vuelta a una cadena JSON
+          string updatedJson = JsonConvert.SerializeObject(jsonArray, Formatting.Indented);
+
+          // Escribir la cadena JSON actualizada de vuelta al archivo
+          File.WriteAllText(filePath, updatedJson);*/
+                    int id = Convert.ToInt32(txtID.Text);
+                    List<clsEstudiante> listaEditar = LoadUsuarioFromJson(path);
+
+                    EditDocente(listaEditar, id, new clsEstudiante
+                    {
+                        Nombre = txtNom.Text,
+                        Apellidos = txtApes.Text,
+                        Identificacion = txtID.Text,
+                        Celular = txtCel.Text,
+                        Correo = txtCorreo.Text,
+                        Nivel = cbNivel.Text,
+                        FechaNacimiento = dpFNac.Text,
+                        Direccion = txtDir.Text,
+                        Genero = cbGenero.Text,
+                    });
+
+                    SaveUsuarioToJson(listaEditar,path);
+                    MessageBox.Show("Se edito el Usuario, ID: "+id.ToString());
+                    importarEstudiantes();
+
+                }
+                else
+                {
+                    MessageBox.Show("Ingresa la dentificacion del usuario");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error a realizar la operacion");
+            }
+
+        }
+
+        static List<clsEstudiante> LoadUsuarioFromJson(string filePath)
+        {
+            // Leer el contenido del archivo JSON
+            string jsonContent = File.ReadAllText(filePath);
+
+            // Deserializar el JSON a una lista de objetos de clsDocente
+            List<clsEstudiante> listaDocentes = JsonConvert.DeserializeObject<List<clsEstudiante>>(jsonContent);
+
+            return listaDocentes;
+        }
+
+        static void EditDocente(List<clsEstudiante> listaDocentes, int idDocente, clsEstudiante nuevosDatos)
+        {
+            // Buscar el docente con el ID especificado
+            clsEstudiante docente = listaDocentes.Find(d => d.IdEstudiante == idDocente);
+
+            if (docente != null)
+            {
+                // Aplicar los nuevos datos al docente encontrado
+                if (!string.IsNullOrEmpty(nuevosDatos.Nombre))
+                    docente.Nombre = nuevosDatos.Nombre;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Apellidos))
+                    docente.Apellidos = nuevosDatos.Apellidos;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Direccion))
+                    docente.Direccion = nuevosDatos.Direccion;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Correo))
+                    docente.Correo = nuevosDatos.Correo;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Identificacion))
+                    docente.Identificacion = nuevosDatos.Identificacion;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Celular))
+                    docente.Celular = nuevosDatos.Celular;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Genero))
+                    docente.Genero = nuevosDatos.Genero;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.Nivel))
+                    docente.Nivel = nuevosDatos.Nivel;
+
+                if (!string.IsNullOrEmpty(nuevosDatos.FechaNacimiento))
+                    docente.FechaNacimiento = nuevosDatos.FechaNacimiento;
+
+
+
+                // Puedes agregar más campos según sea necesario
+            }
+            else
+            {
+                throw new Exception($"No se encontró ningún usuario con el ID {idDocente}");
+            }
+        }
+
     }
 }
