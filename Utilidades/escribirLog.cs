@@ -56,6 +56,7 @@ namespace Examen.Utilidades
             catch
             {
                 //Silenciosa
+                
             }
         }
     }

@@ -60,3 +60,23 @@ C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.csproj.CoreCompileInp
 C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.csproj.Up2Date
 C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.exe
 C:\Users\Dilan Quiros\source\repos\Examen\obj\Debug\Examen.pdb
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\bin\Debug\Examen.exe.config
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\bin\Debug\Examen.exe
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\bin\Debug\Examen.pdb
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Ventanas\Docentes.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Ventanas\Estudiantes.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\App.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen_MarkupCompile.lref
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Ventanas\Docentes.baml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Ventanas\Estudiantes.baml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.g.resources
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.csproj.Up2Date
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.exe
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.pdb

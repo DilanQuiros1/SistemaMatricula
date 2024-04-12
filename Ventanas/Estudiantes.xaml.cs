@@ -4,18 +4,8 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Examen
 {
@@ -28,7 +18,7 @@ namespace Examen
         List<clsEstudiante> listaEstudiante = new List<clsEstudiante>();//Lista de estudiantes
         List<clsEstudiante> listalistaEstudianteTemp = new List<clsEstudiante>();//Lista de estudiantes temporal
         clsEstudiante estudianteGrilla = new clsEstudiante();//Instancia de un usuario
-        string path = @"C:\Examen\Estudiantes.json";
+        string path = @AppDomain.CurrentDomain.BaseDirectory + "Estudiantes.json";
         string accion = "Nuevo";//Variable tipo bandera que almacena la acción que se esta realizando.
         int cont = 1;//Variable que define el ID del estudiante
         public static escribirLog bitacora;
@@ -110,18 +100,23 @@ namespace Examen
 
         public void importarEstudiantes()
         {
-           
 
-            //se abre el archivo Json que se va leer
-            using (StreamReader sr = File.OpenText(path))
+            if (File.Exists(path))
             {
-                string vsRespuestaJson = string.Empty;
-                while ((vsRespuestaJson = sr.ReadLine()) != null)
+                //se abre el archivo Json que se va leer
+                using (StreamReader sr = File.OpenText(path))
                 {
-                    listaEstudiante = JsonConvert.DeserializeObject<List<clsEstudiante>>(vsRespuestaJson);//se deserealiza (descompone) el Json del archivo
-                    dgEstudiantes.ItemsSource = null;
-                    dgEstudiantes.ItemsSource = listaEstudiante;
+                    string vsRespuestaJson = string.Empty;
+                    while ((vsRespuestaJson = sr.ReadLine()) != null)
+                    {
+                        listaEstudiante = JsonConvert.DeserializeObject<List<clsEstudiante>>(vsRespuestaJson);//se deserealiza (descompone) el Json del archivo
+                        dgEstudiantes.ItemsSource = null;
+                        dgEstudiantes.ItemsSource = listaEstudiante;
+                    }
                 }
+            } else
+            {
+                File.Create(path).Dispose();
             }
 
             if (listaEstudiante == null || listaEstudiante.Count == 0)
