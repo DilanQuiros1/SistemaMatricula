@@ -80,3 +80,23 @@ C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas O
 C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.csproj.Up2Date
 C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.exe
 C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\Tarea#3WPF\obj\Debug\Examen.pdb
+C:\Users\josue\Source\Repos\SistemaMatricula\bin\Debug\Examen.exe.config
+C:\Users\josue\Source\Repos\SistemaMatricula\bin\Debug\Examen.exe
+C:\Users\josue\Source\Repos\SistemaMatricula\bin\Debug\Examen.pdb
+C:\Users\josue\Source\Repos\SistemaMatricula\bin\Debug\Newtonsoft.Json.dll
+C:\Users\josue\Source\Repos\SistemaMatricula\bin\Debug\Newtonsoft.Json.xml
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Ventanas\Docentes.g.cs
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Ventanas\Estudiantes.g.cs
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\App.g.cs
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen_MarkupCompile.lref
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Ventanas\Docentes.baml
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Ventanas\Estudiantes.baml
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.g.resources
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.csproj.Up2Date
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.exe
+C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.pdb

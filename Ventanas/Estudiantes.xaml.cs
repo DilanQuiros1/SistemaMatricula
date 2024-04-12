@@ -22,8 +22,10 @@ namespace Examen
         string accion = "Nuevo";//Variable tipo bandera que almacena la acción que se esta realizando.
         int cont = 1;//Variable que define el ID del estudiante
         public static escribirLog bitacora;
+        public static Registros registro;
         public string err;
         public string prueba;
+        public string prue;
         #endregion
 
 
@@ -122,8 +124,9 @@ namespace Examen
 
             if (listaEstudiante == null || listaEstudiante.Count == 0)
             {
-                MessageBox.Show("Favor agregue un docente como mínimo para poder importar.");
-
+                MessageBox.Show("Favor agregue un estudiante como mínimo para poder importar.");
+                err = "ERROR-No se agrego un estudiante para ser exportado. ";
+                bitacora = new escribirLog(err, false);
             }
         }
 
@@ -138,7 +141,9 @@ namespace Examen
                 MessageBox.Show("Datos exportados con éxito.");
             }
             else
-                MessageBox.Show("Favor agregue un usuario como mínimo para poder exportar.");
+                MessageBox.Show("Favor agregue un estudiante como mínimo para poder exportar.");
+            err = "ERROR-No se agrego un estudiante para ser exportado. ";
+            bitacora = new escribirLog(err,false);
         }
 
         public void GuardarCambios()
@@ -195,8 +200,9 @@ namespace Examen
                 listaEstudiante.Add(estudiante);
 
                 SaveUsuarioToJson(listaEstudiante, path);
-
                 MessageBox.Show("Estudiante agregado exitosamente.");
+                err = $"El estudiante,ID:{estudiante.IdEstudiante},Nombre:{estudiante.Nombre},Apellidos:{estudiante.Apellidos}, ha sido registrado";
+                registro = new Registros(err,false);
                 importarEstudiantes();
                 Limpiar();
                 cont++;
@@ -316,11 +322,14 @@ namespace Examen
                 docentes.Remove(docenteAEliminar);
                 GuardarUsuariosEnArchivo(docentes, path);
                 MessageBox.Show("Se elimino de forma correcta");
+                err = $"El usuario:{idUsuario}, ha sido eliminado.";
                 importarEstudiantes();
             }
             else
             {
                 MessageBox.Show("No existe ese ID");
+                err = $"El ID:{idUsuario},no existe";
+                bitacora = new escribirLog(err, false);
             }
         }
 
@@ -357,7 +366,10 @@ namespace Examen
                 {
                     if (respuesta == MessageBoxResult.Yes)
                     {
-                        EliminarUsuarioPorId(Convert.ToInt32(txtID.Text));
+                        string ID = txtID.Text;
+                        EliminarUsuarioPorId(Convert.ToInt32(txtID.Text));           
+                        err = $"El estudiante:{ID}, ha sido eliminado.";
+                        registro = new Registros(err,false);
                     }
                     else
                     {
@@ -368,6 +380,8 @@ namespace Examen
             else
             {
                 System.Windows.MessageBox.Show("Debe seleccionar un estudiante.");
+                err = "ERROR-No se seleciono un estudiante de la tabla.";
+                bitacora = new escribirLog(err,false);
             }
         }
 
@@ -427,11 +441,14 @@ namespace Examen
                     SaveUsuarioToJson(listaEditar,path);
                     MessageBox.Show("Se edito el Usuario, ID: "+id.ToString());
                     importarEstudiantes();
-
+                    err = $"El Usuario,ID:{id}, ha sido modificado.";
+                    registro = new Registros(err,false);
                 }
                 else
                 {
                     MessageBox.Show("Ingresa la dentificacion del usuario");
+                    err = "ERROR-No se completo el campo de dentificacion.";
+                    bitacora = new escribirLog(err,false);
                 }
             }
             catch (Exception)
@@ -454,6 +471,7 @@ namespace Examen
 
         static void EditDocente(List<clsEstudiante> listaDocentes, int idDocente, clsEstudiante nuevosDatos)
         {
+            string err;
             // Buscar el docente con el ID especificado
             clsEstudiante docente = listaDocentes.Find(d => d.IdEstudiante == idDocente);
 
@@ -488,12 +506,14 @@ namespace Examen
                     docente.FechaNacimiento = nuevosDatos.FechaNacimiento;
 
 
-
+                
                 // Puedes agregar más campos según sea necesario
             }
             else
             {
-                throw new Exception($"No se encontró ningún usuario con el ID {idDocente}");
+                err = "ERROR-No se completo el campo de dentificacion.";
+                bitacora = new escribirLog(err, false);
+                throw new Exception($"No se encontró ningún usuario con el ID {idDocente}");               
             }
         }
 
