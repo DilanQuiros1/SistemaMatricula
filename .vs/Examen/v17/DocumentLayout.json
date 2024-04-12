@@ -1,25 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\",
+  "WorkspaceRootPath": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\josue\\source\\repos\\sistemamatricula\\ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\ventanas\\docentes.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\docentes.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\source\\repos\\SistemaMatricula\\ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\estudiantes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\source\\repos\\SistemaMatricula\\ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:ventanas\\docentes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\josue\\source\\repos\\sistemamatricula\\utilidades\\registros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\utilidades\\registros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:utilidades\\registros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\source\\repos\\SistemaMatricula\\utilidades\\escribirlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|c:\\users\\josue\\onedrive - universidad latina\\desktop\\nuevorepo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\utilidades\\escribirlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4B82976-23D7-449D-B5F8-F73D0A09FC06}|Examen.csproj|solutionrelative:utilidades\\escribirlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -66,65 +70,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Registros.cs",
-              "DocumentMoniker": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Utilidades\\Registros.cs",
-              "RelativeDocumentMoniker": "Utilidades\\Registros.cs",
-              "ToolTip": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Utilidades\\Registros.cs",
-              "RelativeToolTip": "Utilidades\\Registros.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAswCkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T01:15:45.323Z",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T06:48:17.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "escribirLog.cs",
-              "DocumentMoniker": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Utilidades\\escribirLog.cs",
-              "RelativeDocumentMoniker": "Utilidades\\escribirLog.cs",
-              "ToolTip": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Utilidades\\escribirLog.cs",
-              "RelativeToolTip": "Utilidades\\escribirLog.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T22:38:19.259Z",
+              "DocumentIndex": 3,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-12T06:48:12.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Estudiantes.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Ventanas\\Estudiantes.xaml.cs",
-              "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml.cs",
-              "ToolTip": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Ventanas\\Estudiantes.xaml.cs",
-              "RelativeToolTip": "Ventanas\\Estudiantes.xaml.cs",
-              "ViewState": "AQIAANUAAAAAAAAAAAAAAEQBAABCAAAA",
+              "Title": "Docentes.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Ventanas\\Docentes.xaml.cs",
+              "RelativeDocumentMoniker": "Ventanas\\Docentes.xaml.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Ventanas\\Docentes.xaml.cs",
+              "RelativeToolTip": "Ventanas\\Docentes.xaml.cs",
+              "ViewState": "AQIAALsAAAAAAAAAAAAAAM4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T13:28:05.584Z",
+              "WhenOpened": "2024-04-12T06:45:46.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Docentes.xaml",
-              "DocumentMoniker": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Ventanas\\Docentes.xaml",
-              "RelativeDocumentMoniker": "Ventanas\\Docentes.xaml",
-              "ToolTip": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Ventanas\\Docentes.xaml",
-              "RelativeToolTip": "Ventanas\\Docentes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-10T13:24:32.601Z",
+              "Title": "Registros.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Utilidades\\Registros.cs",
+              "RelativeDocumentMoniker": "Utilidades\\Registros.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Utilidades\\Registros.cs",
+              "RelativeToolTip": "Utilidades\\Registros.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:44:02.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "escribirLog.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Utilidades\\escribirLog.cs",
+              "RelativeDocumentMoniker": "Utilidades\\escribirLog.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Utilidades\\escribirLog.cs",
+              "RelativeToolTip": "Utilidades\\escribirLog.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAIwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T22:38:19.259Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Estudiantes.xaml",
-              "DocumentMoniker": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Ventanas\\Estudiantes.xaml",
-              "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml",
-              "ToolTip": "C:\\Users\\josue\\source\\repos\\SistemaMatricula\\Ventanas\\Estudiantes.xaml",
-              "RelativeToolTip": "Ventanas\\Estudiantes.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-10T13:14:03.826Z",
+              "Title": "Estudiantes.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Ventanas\\Estudiantes.xaml.cs",
+              "RelativeDocumentMoniker": "Ventanas\\Estudiantes.xaml.cs",
+              "ToolTip": "C:\\Users\\josue\\OneDrive - Universidad Latina\\Desktop\\NuevoRepo\\Ventanas\\Estudiantes.xaml.cs",
+              "RelativeToolTip": "Ventanas\\Estudiantes.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQBAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T13:28:05.584Z",
               "EditorCaption": ""
             }
           ]

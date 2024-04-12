@@ -13,8 +13,7 @@
         <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Height="30" Margin="410,70,0,0" VerticalAlignment="Top" Width="100" Click="btnBuscar_Click"/>
         <DataGrid x:Name="dgEstudiantes" HorizontalAlignment="Left" Height="274" Margin="26,121,0,0" VerticalAlignment="Top" Width="485" d:ItemsSource="{d:SampleData ItemCount=5}" CanUserResizeRows="False" IsReadOnly="True" SelectionChanged="dgEstudiantes_SelectionChanged"/>
         <Button x:Name="btnImportar" Content="Importar" HorizontalAlignment="Left" Height="30" Margin="29,435,0,0" VerticalAlignment="Top" Width="100" Click="btnImportar_Click"/>
-        <Button x:Name="btnExportar" Content="Exportar" HorizontalAlignment="Left" Height="30" Margin="220,435,0,0" VerticalAlignment="Top" Width="100" Click="btnExportar_Click"/>
-        <Button x:Name="btnBorrar" Content="Borrar" HorizontalAlignment="Left" Height="30" Margin="410,435,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnExportar" Content="Exportar" HorizontalAlignment="Left" Height="30" Margin="168,435,0,0" VerticalAlignment="Top" Width="100" Click="btnExportar_Click"/>
         <Label x:Name="lblBuscar_Copy" Content="Nombre:" HorizontalAlignment="Left" Height="30" Margin="754,109,0,0" VerticalAlignment="Top" Width="85"/>
         <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="30" Margin="845,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblBuscar_Copy1" Content="Apellidos:" HorizontalAlignment="Left" Height="30" Margin="541,151,0,0" VerticalAlignment="Top" Width="85"/>
@@ -33,8 +32,8 @@
         <DatePicker x:Name="dpFNac" HorizontalAlignment="Left" Height="32" Margin="631,191,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.017,0.54"/>
         <ComboBox x:Name="cbGenero" HorizontalAlignment="Left" Height="30" Margin="846,238,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>Femenino</ComboBoxItem>
-                  <ComboBoxItem>Masculino</ComboBoxItem>
-          </ComboBox>
+            <ComboBoxItem>Masculino</ComboBoxItem>
+        </ComboBox>
         <ComboBox x:Name="cbNivel" HorizontalAlignment="Left" Height="30" Margin="631,325,0,0" VerticalAlignment="Top" Width="216">
             <ComboBoxItem>Setimo</ComboBoxItem>
             <ComboBoxItem>Octavo</ComboBoxItem>
@@ -47,7 +46,6 @@
         <Button x:Name="btnLimpiar" Content="Limpiar" HorizontalAlignment="Left" Height="30" Margin="705,384,0,0" VerticalAlignment="Top" Width="100" Click="btnLimpiar_Click"/>
         <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Height="30" Margin="864,384,0,0" VerticalAlignment="Top" Width="100" Click="btnEliminar_Click"/>
         <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Height="30" Margin="864,434,0,0" VerticalAlignment="Top" Width="100" Click="btnEditar_Click"/>
-        <Button x:Name="btnMasNiv" Content="Docentes" HorizontalAlignment="Left" Height="30" Margin="864,327,0,0" VerticalAlignment="Top" Width="100" Click="btnMasNiv_Click"/>
         <Label x:Name="lblBuscar_Copy10" Content="Nuevo estudiante:" HorizontalAlignment="Left" Height="30" Margin="541,73,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold"/>
 
     </Grid>

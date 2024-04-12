@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -97,8 +98,14 @@ namespace Examen
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            //GuardarCambios();
-            RegistrarEstudiante();
+            try
+            {
+                RegistrarEstudiante();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void importarEstudiantes()
@@ -117,7 +124,8 @@ namespace Examen
                         dgEstudiantes.ItemsSource = listaEstudiante;
                     }
                 }
-            } else
+            }
+            else
             {
                 File.Create(path).Dispose();
             }
@@ -143,7 +151,7 @@ namespace Examen
             else
                 MessageBox.Show("Favor agregue un estudiante como mínimo para poder exportar.");
             err = "ERROR-No se agrego un estudiante para ser exportado. ";
-            bitacora = new escribirLog(err,false);
+            bitacora = new escribirLog(err, false);
         }
 
         public void GuardarCambios()
@@ -176,46 +184,55 @@ namespace Examen
 
         public void RegistrarEstudiante()
         {
-            clsEstudiante estudiante = new clsEstudiante();
-            if (txtID.Text.Length > 0)
+            if (string.IsNullOrEmpty(txtID.Text) || string.IsNullOrEmpty(txtNom.Text) || string.IsNullOrEmpty(txtApes.Text)
+                   || string.IsNullOrEmpty(txtCel.Text) || string.IsNullOrEmpty(txtCorreo.Text) || string.IsNullOrEmpty(cbNivel.Text)
+                   || string.IsNullOrEmpty(dpFNac.Text) || string.IsNullOrEmpty(cbGenero.Text))
             {
-                estudiante.IdEstudiante = Convert.ToInt32(txtID.Text);
-                estudiante.Identificacion = txtID.Text;
-                estudiante.Nombre = txtNom.Text;
-                estudiante.Apellidos = txtApes.Text;
-                estudiante.FechaNacimiento = dpFNac.Text;
-                estudiante.Celular = txtCel.Text;
-                estudiante.Correo = txtCorreo.Text;
-                if (cbGenero.Text.ToString() == "Femenino")
-                {
-                    estudiante.Genero = "F";
-                }
-                else
-                {
-                    estudiante.Genero = "M";
-
-                }
-                estudiante.Direccion = txtDir.Text;
-                estudiante.Nivel = cbNivel.Text.ToString();
-                listaEstudiante.Add(estudiante);
-
-                SaveUsuarioToJson(listaEstudiante, path);
-                MessageBox.Show("Estudiante agregado exitosamente.");
-                err = $"El estudiante,ID:{estudiante.IdEstudiante},Nombre:{estudiante.Nombre},Apellidos:{estudiante.Apellidos}, ha sido registrado";
-                registro = new Registros(err,false);
-                importarEstudiantes();
-                Limpiar();
-                cont++;
+                throw new Exception("Debe de proporcionar informacion en todos los datos solicitados");
             }
             else
             {
-                err = "Error no se completo el campo de identificación";
-                MessageBox.Show(err);
-                bitacora = new escribirLog(err, false);
+                clsEstudiante estudiante = new clsEstudiante();
+                if (txtID.Text.Length > 0)
+                {
+                    estudiante.IdEstudiante = Convert.ToInt32(txtID.Text);
+                    estudiante.Identificacion = txtID.Text;
+                    estudiante.Nombre = txtNom.Text;
+                    estudiante.Apellidos = txtApes.Text;
+                    estudiante.FechaNacimiento = dpFNac.Text;
+                    estudiante.Celular = txtCel.Text;
+                    estudiante.Correo = txtCorreo.Text;
+                    if (cbGenero.Text.ToString() == "Femenino")
+                    {
+                        estudiante.Genero = "F";
+                    }
+                    else
+                    {
+                        estudiante.Genero = "M";
+
+                    }
+                    estudiante.Direccion = txtDir.Text;
+                    estudiante.Nivel = cbNivel.Text.ToString();
+                    listaEstudiante.Add(estudiante);
+
+                    SaveEstudianteToJson(listaEstudiante, path);
+                    MessageBox.Show("Estudiante agregado exitosamente.");
+                    err = $"El estudiante,ID:{estudiante.IdEstudiante},Nombre:{estudiante.Nombre},Apellidos:{estudiante.Apellidos}, ha sido registrado";
+                    registro = new Registros(err, false);
+                    importarEstudiantes();
+                    Limpiar();
+                    cont++;
+                }
+                else
+                {
+                    err = "Error no se completo el campo de identificación";
+                    MessageBox.Show(err);
+                    bitacora = new escribirLog(err, false);
+                }
             }
         }
 
-        static void SaveUsuarioToJson(List<clsEstudiante> listaDocentes, string filePath)
+        static void SaveEstudianteToJson(List<clsEstudiante> listaDocentes, string filePath)
         {
             if (File.Exists(filePath))
             {
@@ -225,9 +242,7 @@ namespace Examen
                 // Escribir el JSON actualizado de vuelta al archivo
                 File.WriteAllText(filePath, json);
             }
-
         }
-
 
         public void EditarEstudiante()
         {
@@ -257,8 +272,10 @@ namespace Examen
                         item.Nivel = cbNivel.Text.ToString();
                     }
                 }
-
+                int id = Convert.ToInt32(txtID.Text);
                 MessageBox.Show("Estudiante modificado exitosamente.");
+                err = $"El estudiante,ID: {id}, ha sido modificado.";
+                registro = new Registros(err, false);
             }
         }
 
@@ -362,14 +379,14 @@ namespace Examen
         {
             if (estudianteGrilla != null && estudianteGrilla.IdEstudiante != 0)
             {
-                var respuesta = MessageBox.Show("Deseas eliminar este estudiante?", "Atención", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                string ID = txtID.Text;
+                var respuesta = MessageBox.Show($"Desea eliminar el estudiante con ID: {ID}?", "Atención", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 {
                     if (respuesta == MessageBoxResult.Yes)
                     {
-                        string ID = txtID.Text;
-                        EliminarUsuarioPorId(Convert.ToInt32(txtID.Text));           
+                        EliminarUsuarioPorId(Convert.ToInt32(txtID.Text));
                         err = $"El estudiante:{ID}, ha sido eliminado.";
-                        registro = new Registros(err,false);
+                        registro = new Registros(err, false);
                     }
                     else
                     {
@@ -379,15 +396,24 @@ namespace Examen
             }
             else
             {
-                System.Windows.MessageBox.Show("Debe seleccionar un estudiante.");
+                System.Windows.MessageBox.Show("Debe seleccionar al menos un estudiante en la tabla.");
                 err = "ERROR-No se seleciono un estudiante de la tabla.";
-                bitacora = new escribirLog(err,false);
+                bitacora = new escribirLog(err, false);
             }
         }
 
         private void btnBuscar_Click(object sender, RoutedEventArgs e)
         {
-            ListaEstudiantes(txtBuscar?.Text);
+            if (string.IsNullOrEmpty(txtBuscar.Text))
+            {
+                MessageBox.Show("Debe proporcionar un numero de identificacion para realizar la busqueda unica");
+                err = "Error-El campo identificacion no se completo para buscar al usuario.";
+                bitacora = new escribirLog(err, false);
+            }
+            else
+            {
+                ListaEstudiantes(txtBuscar?.Text);
+            }
         }
 
         private void btnExportar_Click(object sender, RoutedEventArgs e)
@@ -397,63 +423,53 @@ namespace Examen
 
         private void btnEditar_Click(object sender, RoutedEventArgs e)
         {
-
             try
             {
-
-                if (txtID.Text != null)
+                if (estudianteGrilla != null && estudianteGrilla.IdEstudiante != 0)
                 {
-                    /*string filePath = @"C:\Examen\Docentes.json";
-
-          // Leer el contenido del archivo JSON
-          string jsonContent = File.ReadAllText(filePath);
-
-          // Parsear el JSON a una lista de objetos dinámicos
-          JArray jsonArray = JArray.Parse(jsonContent);
-
-          // Buscar el usuario que deseas editar (en este caso, el primero)
-          JObject usuario = jsonArray[0] as JObject;
-
-          // Realizar los cambios necesarios
-          usuario["Nombre"] = "NuevoNombre";
-
-          // Convertir la lista de objetos dinámicos de vuelta a una cadena JSON
-          string updatedJson = JsonConvert.SerializeObject(jsonArray, Formatting.Indented);
-
-          // Escribir la cadena JSON actualizada de vuelta al archivo
-          File.WriteAllText(filePath, updatedJson);*/
-                    int id = Convert.ToInt32(txtID.Text);
-                    List<clsEstudiante> listaEditar = LoadUsuarioFromJson(path);
-
-                    EditDocente(listaEditar, id, new clsEstudiante
+                    if (txtID.Text != null)
                     {
-                        Nombre = txtNom.Text,
-                        Apellidos = txtApes.Text,
-                        Identificacion = txtID.Text,
-                        Celular = txtCel.Text,
-                        Correo = txtCorreo.Text,
-                        Nivel = cbNivel.Text,
-                        FechaNacimiento = dpFNac.Text,
-                        Direccion = txtDir.Text,
-                        Genero = cbGenero.Text,
-                    });
+                        int id = Convert.ToInt32(txtID.Text);
+                        List<clsEstudiante> listaEditar = LoadUsuarioFromJson(path);
 
-                    SaveUsuarioToJson(listaEditar,path);
-                    MessageBox.Show("Se edito el Usuario, ID: "+id.ToString());
-                    importarEstudiantes();
-                    err = $"El Usuario,ID:{id}, ha sido modificado.";
-                    registro = new Registros(err,false);
+                        EditEstudiante(listaEditar, id, new clsEstudiante
+                        {
+                            Nombre = txtNom.Text,
+                            Apellidos = txtApes.Text,
+                            Identificacion = txtID.Text,
+                            Celular = txtCel.Text,
+                            Correo = txtCorreo.Text,
+                            Nivel = cbNivel.Text,
+                            FechaNacimiento = dpFNac.Text,
+                            Direccion = txtDir.Text,
+                            Genero = cbGenero.Text,
+                        });
+
+                        SaveEstudianteToJson(listaEditar, path);
+                        MessageBox.Show("Se edito el Usuario, ID: " + id.ToString());
+                        importarEstudiantes();
+                        err = $"El Usuario,ID:{id}, ha sido modificado.";
+                        registro = new Registros(err, false);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ingresa la dentificacion del usuario");
+                        err = "ERROR-No se completo el campo de dentificacion.";
+                        bitacora = new escribirLog(err, false);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Ingresa la dentificacion del usuario");
-                    err = "ERROR-No se completo el campo de dentificacion.";
-                    bitacora = new escribirLog(err,false);
+                    MessageBox.Show("Debe seleccionar al menos un estudiante en la tabla.");
+                    err = "Error-No se ha seleccionado un estudiante de la tabla.";
+                    bitacora = new escribirLog(err, false);
                 }
             }
             catch (Exception)
             {
                 MessageBox.Show("Error a realizar la operacion");
+                err = "Error-La solicitud editar no pudo ser procesada.";
+                bitacora = new escribirLog(err, false);
             }
 
         }
@@ -469,51 +485,47 @@ namespace Examen
             return listaDocentes;
         }
 
-        static void EditDocente(List<clsEstudiante> listaDocentes, int idDocente, clsEstudiante nuevosDatos)
+        static void EditEstudiante(List<clsEstudiante> listaDocentes, int idDocente, clsEstudiante nuevosDatos)
         {
             string err;
             // Buscar el docente con el ID especificado
-            clsEstudiante docente = listaDocentes.Find(d => d.IdEstudiante == idDocente);
+            clsEstudiante estudiante = listaDocentes.Find(d => d.IdEstudiante == idDocente);
 
-            if (docente != null)
+            if (estudiante != null)
             {
                 // Aplicar los nuevos datos al docente encontrado
                 if (!string.IsNullOrEmpty(nuevosDatos.Nombre))
-                    docente.Nombre = nuevosDatos.Nombre;
+                    estudiante.Nombre = nuevosDatos.Nombre;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Apellidos))
-                    docente.Apellidos = nuevosDatos.Apellidos;
+                    estudiante.Apellidos = nuevosDatos.Apellidos;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Direccion))
-                    docente.Direccion = nuevosDatos.Direccion;
+                    estudiante.Direccion = nuevosDatos.Direccion;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Correo))
-                    docente.Correo = nuevosDatos.Correo;
+                    estudiante.Correo = nuevosDatos.Correo;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Identificacion))
-                    docente.Identificacion = nuevosDatos.Identificacion;
+                    estudiante.Identificacion = nuevosDatos.Identificacion;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Celular))
-                    docente.Celular = nuevosDatos.Celular;
+                    estudiante.Celular = nuevosDatos.Celular;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Genero))
-                    docente.Genero = nuevosDatos.Genero;
+                    estudiante.Genero = nuevosDatos.Genero;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.Nivel))
-                    docente.Nivel = nuevosDatos.Nivel;
+                    estudiante.Nivel = nuevosDatos.Nivel;
 
                 if (!string.IsNullOrEmpty(nuevosDatos.FechaNacimiento))
-                    docente.FechaNacimiento = nuevosDatos.FechaNacimiento;
-
-
-                
-                // Puedes agregar más campos según sea necesario
+                    estudiante.FechaNacimiento = nuevosDatos.FechaNacimiento;
             }
             else
             {
                 err = "ERROR-No se completo el campo de dentificacion.";
                 bitacora = new escribirLog(err, false);
-                throw new Exception($"No se encontró ningún usuario con el ID {idDocente}");               
+                throw new Exception($"No se encontró ningún usuario con el ID {idDocente}");
             }
         }
 

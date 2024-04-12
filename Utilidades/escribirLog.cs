@@ -13,7 +13,7 @@ namespace Examen.Utilidades
         public static Boolean mostrarConsola { get; set; }
 
         //Constructor si se pasa el mensaje por parámetro en la creación de la clase
-        public  escribirLog(string mensajeEnviar, Boolean mostrarConsola)
+        public escribirLog(string mensajeEnviar, Boolean mostrarConsola)
         {
             mensajeLog = mensajeEnviar;
             if (mostrarConsola)
@@ -56,7 +56,7 @@ namespace Examen.Utilidades
             catch
             {
                 //Silenciosa
-                
+
             }
         }
     }

@@ -100,3 +100,25 @@ C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.csproj.CoreCompile
 C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.csproj.Up2Date
 C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.exe
 C:\Users\josue\Source\Repos\SistemaMatricula\obj\Debug\Examen.pdb
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Ventanas\Docentes.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Ventanas\Estudiantes.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Ventanas\MainMenu.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\App.g.cs
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen_MarkupCompile.lref
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.exe
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.pdb
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\bin\Debug\Examen.exe.config
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\bin\Debug\Examen.exe
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\bin\Debug\Examen.pdb
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Ventanas\Docentes.baml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Ventanas\Estudiantes.baml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Ventanas\MainMenu.baml
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.g.resources
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\nocal\OneDrive - Universidad Latina\Ulatina\VII Cuatrimestre\Sistemas Operativos\Tarea #3\NuevoRepo\obj\Debug\Examen.csproj.Up2Date
