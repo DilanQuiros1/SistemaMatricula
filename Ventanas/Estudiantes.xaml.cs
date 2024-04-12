@@ -23,6 +23,7 @@ namespace Examen
         int cont = 1;//Variable que define el ID del estudiante
         public static escribirLog bitacora;
         public string err;
+        public string prueba;
         #endregion
 
 

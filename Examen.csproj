@@ -73,6 +73,7 @@
     <Compile Include="Clases\clsDocente.cs" />
     <Compile Include="Clases\clsEstudiante.cs" />
     <Compile Include="Utilidades\escribirLog.cs" />
+    <Compile Include="Utilidades\Registros.cs" />
     <Compile Include="Utilidades\validar.cs" />
     <Compile Include="Ventanas\Docentes.xaml.cs">
       <DependentUpon>Docentes.xaml</DependentUpon>
